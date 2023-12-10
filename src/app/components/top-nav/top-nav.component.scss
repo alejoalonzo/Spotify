@@ -1,0 +1,59 @@
+
+.spotify__top-nav{
+    width: 75.5%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    z-index: 2;
+    position: fixed;
+    top: 5px;
+
+    &-backAndForth{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        a {
+            font-size: 1.5em;
+            color: gray;
+        }
+        &-back, &-forward{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+        }
+        &-back{
+            margin-right: 5px;
+        }
+    }
+
+    &-ath{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 5;
+        margin-right: 20px;
+        
+        &-signUp{
+            color: lightgray;
+            font-weight: 600;
+            margin-right: 35px;
+        }
+
+        .btn{
+            border-radius: 2em;
+            --bs-btn-padding-x: 1.75rem;
+            --bs-btn-padding-y: 0.8rem;
+        }
+        &-logIn{
+            font-weight: 600;
+        }
+    }
+}

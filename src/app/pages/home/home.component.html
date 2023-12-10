@@ -1,0 +1,54 @@
+<div class="spotify__home-container row">
+    <div class="spotify__home-container-sidebar col-3">
+        <div class="spotify__home-container-sidebar-itemsTop">
+            <div class="spotify__home-container-sidebar-itemsTop-item">
+                <img src="assets/Spotify-light.png" alt="">
+            </div>
+            <div class="spotify__home-container-sidebar-itemsTop-item">
+                <a href=""><fa-icon [icon]="faHome"></fa-icon> Home</a>
+            </div>
+            <div class="spotify__home-container-sidebar-itemsTop-item">
+                <a href=""><fa-icon [icon]="faSearch"></fa-icon> Search</a>
+            </div>
+        </div>
+
+
+        <div class="spotify__home-container-sidebar-itemsBottom">
+            <div class="spotify__home-container-sidebar-itemsBottom-item">
+                <a href=""><fa-icon [icon]="faBookBookmark"></fa-icon> Your Librery</a>
+                <a href=""><fa-icon [icon]="faPlus"></fa-icon></a>
+            </div>
+            <div class="spotify__home-container-sidebar-itemsBottom-item">
+                <div class="containerCreateYourFirtList">
+                    <a href="" class="white">Create your first playlist</a><br>
+                    <a href="">It's easy, We'll help you</a>
+                    <div class="btnWhite"></div>
+                    <button type="button" class="btn btn-light mt-4">Create Playlist</button>
+                </div>
+            </div>
+
+            <div class="spotify__home-container-sidebar-itemsBottom-item">
+                <div class="containerCreateYourFirtList">
+                    <a href="" class="white">Let's find some podcats to follow</a><br>
+                    <a href="">We'll keep you updated on new episodes</a>
+                    <div class="btnWhite"></div>
+                    <button type="button" class="btn btn-light mt-4">Browse podcats</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="spotify__home-container-playlist col-9">
+        <app-top-nav></app-top-nav>
+        <app-playlist></app-playlist>
+    </div>
+</div>
+<div class="spotify__home-bePremium row">
+    <div class="spotify__home-bePremium-text col-7">
+        <div>PREVIEW OF SPOTIFY</div>
+        <div>Sign up to get unlimited songs and podcats with occasional adds. No credit card needed.</div>
+    </div>
+    <div class="col-3"></div>
+    <div class="spotify__home-bePremium-button col-2">
+        <button type="button" class="btn btn-light spotify__home-bePremium-button-Free">Sign up free</button>
+    </div>
+</div>
