@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/*FONTS*/
+
+@font-face {
+    font-family: 'circular-black';
+    src: url('assets/CircularSpotifyText-Black.otf');
+  }
+
+  @font-face {
+    font-family: 'circular-bold';
+    src: url('assets/CircularSpotifyText-Bold.otf');
+  }
+  @font-face {
+    font-family: 'circular-medium';
+    src: url('assets/CircularSpotifyText-Medium.otf');
+  }
+  @font-face {
+    font-family: 'circular-light';
+    src: url('assets/CircularSpotifyText-Light.otf');
+  }
+
+  *{
+    overflow-x: hidden;
+  }

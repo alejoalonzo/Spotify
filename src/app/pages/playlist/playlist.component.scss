@@ -4,28 +4,28 @@
     z-index: 1;
     margin-top: 10px;
     border-radius: 10px 0 0 0;
-    position: fixed;
-    top: 5px;
 
     &-title{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         font-weight: 600;
-        margin-top: 80px;
-        width: 75.5%;
+        margin: 80px 0 30px 0;
+        width: 100%;
         align-items: center;
 
         &-playlist{
             color: white;
             margin-left: 15px;
-            font-size: 2em;
+            font-size: 1.6em;
+            font-family: circular-medium;
         }
         &-showAll{
             color: gray;
             margin-right: 20px;
         }
     }
+
 }
 
 .gradientBlack{

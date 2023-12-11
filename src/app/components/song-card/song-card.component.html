@@ -1,7 +1,11 @@
-<div class="card" style="width: 13rem;">
-    <img src="assets/imgTest.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h4>Title</h4>
-        <p class="card-text">Description</p>
+<div class="spotify__songCard-items">
+    <div *ngIf="musicData" class="spotify__songCard-items-item">
+        <div *ngFor="let playlist of musicData.playlists.items.slice(1, 8)" class="card" style="width: 13rem;">
+            <img src="{{ playlist.data.images.items[0].sources[0].url }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5>{{ playlist.data.name }}</h5>
+                <p class="card-text">{{ playlist.data.description }}</p>
+            </div>
+        </div>
     </div>
 </div>

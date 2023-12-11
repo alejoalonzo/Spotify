@@ -10,7 +10,6 @@
         align-items: center;
         background-color: black;
         height: 100vh;
-
         overflow-x: hidden; 
 
         &-itemsBottom{
@@ -18,12 +17,16 @@
         }
 
         &-itemsTop, &-itemsBottom{
+
+            
+
             background-color: #121212;
             width: 100%;
-            border-radius: 5px;
-            padding: 30px 0 30px 30px;
-            margin-top: 15px;
-            
+            border-radius: 10px;
+            padding: 20px 0 30px 20px;
+            margin-top: 10px;
+            overflow: hidden;
+
             &-item{
                 display: flex;
                 justify-content: space-between;
@@ -37,6 +40,7 @@
                 a{
                     color: lightgray;
                     font-size: 1.1em;
+                    font-family: circular-medium;
                     text-decoration: none;
                     text-align: start!important;
                 }
@@ -51,7 +55,7 @@
                     width: 104%;
                     padding-left: 20px;
                     padding-top: 15px;
-                    margin: 10px 10px 0 -20px;
+                    margin: 10px 10px 0 0px;
                     font-size: 0.9em;
                     .btn{
                         border-radius: 2em;
@@ -86,7 +90,7 @@
 
     &-text{
         color: white;
-        padding-left: 28px;
+        padding-left: 40px;
     }
 
     .btn{

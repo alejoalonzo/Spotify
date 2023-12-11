@@ -45,12 +45,14 @@
             color: lightgray;
             font-weight: 600;
             margin-right: 35px;
+            font-family: circular-bold;
         }
 
         .btn{
             border-radius: 2em;
             --bs-btn-padding-x: 1.75rem;
             --bs-btn-padding-y: 0.8rem;
+            font-family: circular-bold;
         }
         &-logIn{
             font-weight: 600;
