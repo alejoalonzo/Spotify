@@ -6,10 +6,15 @@
         <div class="spotify__top-nav-backAndForth-forward">
             <a href=""><fa-icon [icon]="faChevronRight"></fa-icon></a>
         </div>
+        <div class="searchBox" *ngIf="isSearchFieldVisible">
+            <fa-icon class="searchIcon" [icon]="faSearch"></fa-icon>
+            <input class="searchPlaylist" type="search" placeholder="What do you want to listen to?">
+        </div>
     </div>
     <div class="spotify__top-nav-ath">
         <div class="spotify__top-nav-ath-signUp">Sign up</div>
 
-        <button type="button" class="btn btn-light spotify__top-nav-ath-logIn">Log in</button>
+        <button type="button" class="btn btn-light spotify__top-nav-ath-logIn" routerLink="/login">Log in</button>
+
     </div>
 </div>

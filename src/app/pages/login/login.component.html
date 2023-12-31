@@ -1,1 +1,49 @@
-<p>login works!</p>
+<div class="spotify__login-header">
+    <div class="spotify__login-header-logo">
+        <a href=""><img src="assets/Spotify-light.png" alt=""></a>
+    </div>
+</div>
+<div class="spotify__login-form-container">
+    <div class="spotify__login-form">
+        <h4 class="spotify__login-form-title">Sign in to Spotify</h4>
+        <div class="spotify__login-form-loginWithSocial">
+            <button type="button" class="btn btn-light " routerLink="">
+                Continue with Google</button>
+            <button type="button" class="btn btn-light " routerLink="">
+                Continue with Facebook</button>
+            <button type="button" class="btn btn-light " routerLink="">
+                Continue with Apple</button>
+        </div>
+
+        <div class="separate"></div>
+
+        <form class="spotify__login-form-email" [formGroup]="userForm" (ngSubmit)="submit()">
+            <fieldset>
+                <div class="mb-3 spotify__login-form-email-inputs">
+                    <label for="disabledTextInput" class="form-label">Email or username</label>
+                    <input [formControl]="usernameForm" type="text" id="disabledTextInput" class="form-control"
+                        placeholder="Email or username">
+                </div>
+                <div class="mb-3 spotify__login-form-email-inputs">
+                    <label for="disabledSelect" class="form-label">Password</label>
+                    <input [formControl]="passwordForm" type="text" id="disabledTextInput" class="form-control"
+                        placeholder="Password">
+                </div>
+                <div class="mb-3 switch">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                            checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Remember me</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn">Log in</button>
+
+                <div class="center">Have you forgotten the password?</div>
+            </fieldset>
+        </form>
+        <div class="separate"></div>
+
+        <div class="center">Don't have an account? Subscribe to Spotify.</div>
+    </div>
+
+</div>

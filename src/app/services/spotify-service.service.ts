@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { environment } from '../../../environments/environment';
 
 
@@ -10,6 +10,7 @@ import { environment } from '../../../environments/environment';
 })
 export class SpotifyServiceService {
 
+  public isSearchVisible: BehaviorSubject<boolean>= new BehaviorSubject<boolean>(false);
   private apiUrl = environment.spotifyApiBaseUrl;
 
   constructor(private http: HttpClient) { }

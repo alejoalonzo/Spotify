@@ -67,42 +67,4 @@
         }
 
     }
-
-    &-playlist{
-        background-color:#000000;
-        height: 100vh;
-        padding-left: 0px;
-    }
-
-    .white{
-        color: #ffff;
-    }
-}
-.spotify__home-bePremium{
-    position: fixed;
-    bottom: 0px;
-    height: 75px;
-    width: 100%;
-    background: rgb(175,40,150);
-    background: linear-gradient(90deg, rgba(175,40,150,1) 0%, rgba(80,155,245,1) 100%);
-    align-items: center;
-    z-index: 6;
-
-    &-text{
-        color: white;
-        padding-left: 40px;
-    }
-
-    .btn{
-        border-radius: 2em;
-        --bs-btn-padding-x: 1.4rem;
-        --bs-btn-padding-y: 0.9rem;
-        margin-right: 20px;
-    }
-    &-button{
-        text-align: end;
-        &-Free{
-            font-weight: 600;
-        }
-    }
 }

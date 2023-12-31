@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { SpotifyServiceService } from '../../services/spotify-service.service';
@@ -12,6 +12,8 @@ import { SpotifyServiceService } from '../../services/spotify-service.service';
   providers: [SpotifyServiceService]
 })
 export class SongCardComponent {
+
+  // @Input() data: any;
 
   artistName: string = 'playlists';
   musicData: any;

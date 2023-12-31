@@ -32,6 +32,35 @@
         &-back{
             margin-right: 5px;
         }
+
+        .searchBox{
+            position: relative;
+            .searchIcon{
+                color: gray;
+                position: absolute;
+                top: 50%;
+                left: 25px;
+                transform: translateY(-50%);
+                font-size: 1.2em;
+            }
+            .searchPlaylist{
+                background-color: #2A2A2A;
+                color: white;
+                border: none;
+                border-radius: 2em;
+                width: 350px;
+                height: 45px;
+                margin-left: 10px;
+                padding-left: 40px;
+            }
+    
+            .searchPlaylist::placeholder{
+                color: gray;
+                padding-left: 5px;
+            }
+
+        }
+
     }
 
     &-ath{

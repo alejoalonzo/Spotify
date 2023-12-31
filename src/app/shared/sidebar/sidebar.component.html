@@ -1,0 +1,37 @@
+<div class="sideBar">
+    <div class="sidebar-itemsTop">
+        <div class="sidebar-itemsTop-item">
+            <img src="assets/Spotify-light.png" alt="">
+        </div>
+        <div class="sidebar-itemsTop-item">
+            <a href=""><fa-icon [icon]="faHome"></fa-icon> Home</a>
+        </div>
+        <div class="sidebar-itemsTop-item" (click)="onNavigatation('search')">
+            <a href="#"><fa-icon [icon]="faSearch"></fa-icon> Search</a>
+        </div>
+    </div>
+
+    <div class="sidebar-itemsBottom" (click)="onNavigatation('library')">
+        <div class="sidebar-itemsBottom-item">
+            <a href=""><fa-icon [icon]="faBookBookmark"></fa-icon> Your Librery</a>
+            <a href=""><fa-icon [icon]="faPlus"></fa-icon></a>
+        </div>
+        <div class="sidebar-itemsBottom-item">
+            <div class="containerCreateYourFirtList">
+                <a href="" class="white">Create your first playlist</a><br>
+                <a href="">It's easy, We'll help you</a>
+                <div class="btnWhite"></div>
+                <button type="button" class="btn btn-light mt-4">Create Playlist</button>
+            </div>
+        </div>
+
+        <div class="sidebar-itemsBottom-item">
+            <div class="containerCreateYourFirtList">
+                <a href="" class="white">Let's find some podcats to follow</a><br>
+                <a href="">We'll keep you updated on new episodes</a>
+                <div class="btnWhite"></div>
+                <button type="button" class="btn btn-light mt-4">Browse podcats</button>
+            </div>
+        </div>
+    </div>
+</div>
